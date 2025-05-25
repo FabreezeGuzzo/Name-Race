@@ -1,0 +1,38 @@
+#Import random
+#State Purpose
+-Create a gmae called The Name Race. Game between user and computer.
+
+#Inform User of Game rules
+-There are 6 spots to be filled. On a player's turn they roll a 6 sided die to determine which spot they have the opportunity to write their name in. However, they can only write their name there if it is empty! They cannot overwrite the other player's name, or re-write their name if it is already there.
+-The winner of a round is the player who has the most spots with their name in it at the end of the round. If both players have 3 spots filled, the round results in a tie.
+-A human player can also give up after any turn. Before the game flips the coin to determine a turn, the user should be given a choice of whether another turn should be played or the game should end.
+-Points are earned based on the outcome of a round; the first player to 10 points wins the game. At the end of a round, a tie results in each player earning 1 point; otherwise, the winner receives 5 points and the loser receives 0 points. If the human player chooses to quit, the computer player is awarded 10 points. The first player to earn at least 10 points wins the game, and the program ends at that time.
+
+#Input the two players
+- human = 0
+- computer = 0
+
+#input the coin
+- coin = random.randint(1,6)
+
+#input the dice
+- dice = random.randint(1,6)
+
+#coin function
+-Coin function determines which player is assigned to heads or tails.
+-Coin flips to determine which player puts there name down.
+
+#dice function
+-Dice function determines the outcome of the players "roll".
+-Winner determined from coin flip, claims spot rolled on the dice.
+
+#The coin and dice function is looped unitl all 6 spots of the die are taken up.
+
+#Victor function
+-Determine winner of round with 5 points awarded to player with majority spaces and 1 point awarded to both players if each has 3 spots
+-Determine overall winner with first player reaching a total of 10 points
+
+#main function
+-Call all functions into the main function
+
+#Thank user
